@@ -1,0 +1,110 @@
+:root {
+    --vdgb: hsl(217, 19%, 35%);
+    --ddb: hsl(214, 17%, 51%);
+    --gb: hsl(212, 23%, 69%);
+    --lgb: hsl(210, 46%, 95%);
+}
+
+body {
+    background-color: var(--lgb);
+    font-family: 'Manrope', sans-serif;
+}
+
+#main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50rem;
+    height: auto;
+    border: 0.1px solid var(--lgb);
+    border-radius: 10px;
+    background-color: white;
+}
+
+#sub-main {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+#img img {
+    position: relative;
+    width: 325px;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+#content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 3%;
+    margin-top: -3%;
+}
+
+#hdrs {
+    text-align: left;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--ddb);
+}
+
+#info {
+    margin-top: -3%;
+    margin-bottom: 5%;
+    font-size: 15px;
+    color: var(--gb);
+    font-weight: 400;
+}
+
+#bottom-content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#profile-info {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    font-size: 13px;
+}
+
+.user {
+    width: 38px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.nameNdate {
+    position: relative;
+    display: block;
+    margin: 0 10px;
+}
+
+#name {
+    margin: -0.5px 0;
+    font-weight: 500;
+}
+
+#date {
+    color: var(--gb);
+}
+
+.share {
+    width: 20px;
+    height: fit-content;
+    padding: 5px;
+    border-radius: 24px;
+    background-color: var(--lgb);
+    border: 0.1px solid var(--lgb);
+    text-align: center;
+}
+
