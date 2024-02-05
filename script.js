@@ -1,6 +1,7 @@
 $('.shareDiv').click(
     function(){
         $('#hoverShare').fadeToggle("slow");
+        $('#arrow').addClass("visibleArrow");
     }
 )
 
