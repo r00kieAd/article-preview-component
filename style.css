@@ -17,7 +17,7 @@ body {
     width: 46rem;
     height: auto;
     border: 1px solid var(--lightGrayishBlue);
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: white;
     font-family: 'Manrope', sans-serif;
 }
@@ -32,7 +32,7 @@ body {
 }
 
 #potrait {
-    border-radius: 5px 0 0 5px;
+    border-radius: 8px 0 0 8px;
     width: 300px;
     height: auto;
 }
@@ -45,16 +45,18 @@ body {
 
 #contents {
     position: relative;
-    /* margin-left: 1rem; */
     padding: 12px;
 }
 
 .headers h3 {
+    margin-top: 0;
     font-size: x-large;
+    color: var(--veryDarkGrayishBlue);
 }
 
 .headers p {
-    font-size: medium;
+    font-size: 15px;
+    color: var(--grayishBlue);
 }
 
 #bottom-contents {
@@ -80,10 +82,9 @@ body {
 }
 
 #profile-photo {
-    width: 40px;
+    width: 38px;
     height: auto;
     margin-right: 10px;
-    border: 0.1px solid transparent;
     border-radius: 20px;
 }
 
@@ -98,6 +99,16 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-size: 14px;
+}
+
+#name {
+    color: var(--veryDarkGrayishBlue);
+    font-weight: 700;
+}
+
+#date {
+    color: var(--grayishBlue);
 }
 
 .pf {
@@ -155,13 +166,94 @@ body {
     margin-left: 45.7%;
 }
 
+#mobile-hover-div-container {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+#mobile-hover-div {
+    display: none;
+}
+
 .share-button {
     border: 1px solid transparent;
     background-color: var(--lightGrayishBlue);
-    padding: 5px;
+    padding: 5px 7px;
     border-radius: 16px;
 }
 
 .share-button:hover {
     cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+
+    #hover-div {
+        visibility: hidden;
+    }
+
+    #bottom-info {
+        position: relative;
+        display: flex;
+    }
+
+    #mobile-hover-div {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding: 0.3rem 0;
+        background-color: var(--veryDarkGrayishBlue);
+        border-radius: 7px;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    #hover-contents {
+        display: flex;
+        align-items: center;
+        margin-left: -40%;
+    }
+
+    .hide-profile {
+        visibility: hidden;
+    }
+
+    .share-button {
+        padding: 3px 6px;
+    }
+
+}
+
+@media screen and (max-width: 740px) {
+
+    #bottom-contents {
+        margin-top: 1%;
+    }
+
+    #main-div {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        width: fit-content;
+        height: auto;
+        margin-top: 3%;
+        border-radius: 5px;
+    }
+
+    #main-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: inherit;
+        height: auto;
+    }
+
+    #potrait {
+        border-radius: 5px 5px 0 0;
+        width: 100%;
+        height: auto;
+    }
 }
