@@ -1,3 +1,5 @@
+$('#scrwdth').text((screen.width).toString());
+
 $('.share-button').click(
     function () {
         if (screen.width <= 900) {
