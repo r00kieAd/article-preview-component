@@ -1,4 +1,4 @@
-$('#scrwdth').text((screen.width).toString());
+
 
 $('.share-button').click(
     function () {
