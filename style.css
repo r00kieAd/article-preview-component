@@ -189,9 +189,9 @@ body {
 
 @media screen and (max-width: 900px) {
 
-    #hover-div {
+    /* #hover-div {
         visibility: hidden;
-    }
+    } */
 
     #bottom-info {
         position: relative;
